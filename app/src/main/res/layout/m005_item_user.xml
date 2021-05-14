@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/d_5"
+    android:paddingBottom="@dimen/d_5"
+    android:weightSum="10">
+
+    <TextView
+        android:gravity="center_vertical"
+        android:id="@+id/tv_tenUser"
+        android:layout_marginLeft="@dimen/d_10"
+        android:layout_marginRight="@dimen/d_5"
+        android:background="@drawable/round_grey"
+        android:layout_weight="9"
+        android:hint="Cricketer Name"
+        android:textSize="14sp"
+        android:paddingLeft="@dimen/d_10"
+        android:textColor="@color/white"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/d_40"/>
+    <ImageView
+        android:layout_weight="1"
+        android:id="@+id/iv_remove"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/d_30"
+        android:layout_marginRight="@dimen/d_10"
+        android:layout_marginLeft="@dimen/d_5"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/ic_close"
+        app:tint="@color/black"></ImageView>
+
+</LinearLayout>

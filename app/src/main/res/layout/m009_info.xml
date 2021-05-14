@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".M009_Info"
+    android:background="@drawable/background_info">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/d_20"
+        android:paddingRight="@dimen/d_20"
+        android:layout_marginTop="50dp"
+        android:textSize="@dimen/d_18"
+        android:text="App theo dõi sức khỏe IHeath là thành quả đúc kết sau 4 năm học và cũng là sản phẩm môn Dự án của nhóm phát triển."
+            android:textColor="@color/black"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/d_20"
+        android:paddingRight="@dimen/d_20"
+        android:layout_marginTop="@dimen/d_10"
+        android:textSize="@dimen/d_18"
+        android:text="Những thành viên tham gia nhóm dự án:\n   Nguyễn Chiến Thắng\n   Phạm Trọng Quyết\n   Đặng Anh Sơn\n   Phạm Công Sơn"
+        android:textColor="@color/black"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/d_20"
+        android:paddingRight="@dimen/d_20"
+        android:layout_marginTop="@dimen/d_10"
+        android:textSize="@dimen/d_18"
+        android:text="Lời cảm ơn:\nĐội ngũ thiết kế app sức khỏe IHeath xin chân thành cảm ơn cố vấn dự án cho nhóm Th.sỹ Lê Đức Trọng đã có những nhận xét, đóng góp, giúp đỡ trong suốt quá trình làm dự án của nhóm."
+        android:textColor="@color/black"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/d_20"
+        android:paddingRight="@dimen/d_20"
+        android:layout_marginTop="@dimen/d_10"
+        android:textSize="@dimen/d_18"
+        android:text="Thông tin liên lạc xin vui lòng liên hệ địa chỉ email: cthang429@gmail.com hoặc qua số điện thoại 0961079509"
+        android:textColor="@color/black"/>
+</LinearLayout>

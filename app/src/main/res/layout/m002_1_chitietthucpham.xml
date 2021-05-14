@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".thucpham_002.chitietthucpham_002_1.M002_1_ChiTietThucPham"
+    android:background="@drawable/bg_heathy2">
+   <ScrollView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:scrollbars="vertical">
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="vertical">
+           <TextView
+               android:layout_marginTop="@dimen/d_15"
+               android:textColor="@color/black"
+               android:id="@+id/tv_tenThucPham_007"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="Tên thực phẩm:"
+               android:textSize="@dimen/d_20"
+               android:paddingLeft="@dimen/d_15"/>
+           <TextView
+               android:textColor="@color/black"
+               android:id="@+id/tv_caloThucPham_007"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="Lượng calo có trong 100gram"
+               android:textSize="@dimen/d_20"
+               android:paddingLeft="@dimen/d_15"/>
+
+           <com.github.mikephil.charting.charts.PieChart
+               android:id="@+id/chart"
+               android:layout_gravity="center"
+               android:layout_marginTop="@dimen/d_20"
+               android:layout_width="@dimen/d_300"
+               android:layout_height="@dimen/d_300" />
+           <TextView
+               android:textColor="@color/black"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="Thông tin về dưỡng chất có trong 100gram:"
+               android:textSize="@dimen/d_20"
+               android:paddingLeft="@dimen/d_10"/>
+           <TextView
+               android:id="@+id/tv_chatbeo_m002_1"
+               android:textColor="@color/black"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="Chất béo: 40g"
+               android:textSize="@dimen/d_18"
+               android:paddingLeft="@dimen/d_40"/>
+           <TextView
+               android:id="@+id/tv_chatbot_m002_1"
+               android:textColor="@color/black"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="Chất bột: 40g"
+               android:textSize="@dimen/d_18"
+               android:layout_marginTop="@dimen/d_5"
+               android:paddingLeft="@dimen/d_40"/>
+           <TextView
+               android:id="@+id/tv_chatdam_m002_1"
+               android:textColor="@color/black"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="Chất đạm: 40g"
+               android:textSize="@dimen/d_18"
+               android:layout_marginTop="@dimen/d_5"
+               android:paddingLeft="@dimen/d_40"/>
+           <TextView
+               android:id="@+id/tv_chatxo_m002_1"
+               android:textColor="@color/black"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="Chất xơ: 40g"
+               android:textSize="@dimen/d_18"
+               android:layout_marginTop="@dimen/d_5"
+               android:paddingLeft="@dimen/d_40"/>
+           <TextView
+               android:id="@+id/tv_nuoc_m002_1"
+               android:textColor="@color/black"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="Nước: 40g"
+               android:textSize="@dimen/d_18"
+               android:layout_marginTop="@dimen/d_5"
+               android:paddingLeft="@dimen/d_40"/>
+       </LinearLayout>
+   </ScrollView>
+</LinearLayout>

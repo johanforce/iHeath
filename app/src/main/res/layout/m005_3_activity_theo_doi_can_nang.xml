@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_heathy2">
+     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d_500"
+        android:orientation="vertical">
+        <TextView
+            android:layout_marginTop="@dimen/d_10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nhập số cân"
+            android:textSize="@dimen/d_20"
+            android:textColor="@color/black"
+            android:gravity="center"/>
+        <EditText
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/d_10"
+            android:background="@drawable/ic_botron"
+            android:layout_width="@dimen/d_200"
+            android:layout_height="@dimen/d_50"
+            android:textSize="@dimen/d_20"
+            android:gravity="center"
+            android:id="@+id/tv_can"/>
+        <Button
+            android:textColor="@color/black"
+            android:layout_marginTop="@dimen/d_50"
+            android:text="Cập nhật"
+            android:layout_gravity="center"
+            android:background="@drawable/round_button"
+            android:paddingRight="@dimen/d_20"
+            android:paddingTop="@dimen/d_5"
+            android:paddingBottom="@dimen/d_5"
+            android:paddingLeft="@dimen/d_20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/bt_Show"/>
+    <com.github.mikephil.charting.charts.CombinedChart
+        android:id="@+id/combinedChart"
+        android:layout_width="match_parent"
+        android:padding="@dimen/d_10"
+        android:layout_height="@dimen/d_300"
+        android:layout_marginTop="@dimen/d_10" />
+     </LinearLayout>
+</LinearLayout>

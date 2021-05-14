@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:scrollbars="vertical"
+    android:background="@drawable/bg_heathy3">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Lịch sử Calo"
+                android:textSize="@dimen/d_30"
+                android:textColor="@color/black"
+                android:layout_margin="@dimen/d_10"/>
+            <ListView
+                android:background="#33FFFFFF"
+                android:id="@+id/lv_history_calo_003"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:divider="@android:color/darker_gray"
+                android:dividerHeight="0.5dp" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

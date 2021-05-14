@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.iheath">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.IHeath"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".M009_Info"></activity>
+        <activity
+            android:name=".M000_Splash"
+            android:theme="@style/Theme.IHeath.Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".M001_menu"
+            android:theme="@style/Theme.Design.Light.NoActionBar">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".thucpham_002.M002_ThucPham" />
+        <activity android:name=".ktrathetrang_003.M003_KtraTheTrang" />
+        <activity android:name=".ktrathetrang_003.history_003_1.M003_1_History_BMI" />
+        <activity android:name=".ktrathetrang_003.history_003_1.M003_1_History_CaloCanNap" />
+        <activity android:name=".ktrathetrang_003.history_003_1.M003_1_HistoryCalo" />
+        <activity android:name=".tinhkcal_004.M004_TinhKcal" />
+        <activity android:name=".tinhkcal_004.M004_1_ThongTinMonAn" />
+        <activity android:name=".thucpham_002.chitietthucpham_002_1.M002_1_ChiTietThucPham" />
+        <activity android:name=".theodoisuckhoe_005.M005_DanhSachNguoiDung" />
+        <activity android:name=".theodoisuckhoe_005.M005_1_ThemHoSo" />
+        <activity android:name=".theodoisuckhoe_005.M005_2_ThongTinChiTiet" />
+        <activity android:name=".theodoisuckhoe_005.M005_3_TheoDoiCanNang" />
+        <activity android:name=".tintuc_007.M007_TinTuc" />
+        <activity android:name=".tintuc_007.danhsachchitiet.M007_1_DanhSachTinTuc" />
+        <activity android:name=".monancuaban_006.M006_MonAnUaThich" />
+        <activity android:name=".monancuaban_006.M006_1_ThongTinChiTiet" />
+        <activity android:name=".nhiptim_008.M008_NhipTim" />
+    </application>
+
+</manifest>

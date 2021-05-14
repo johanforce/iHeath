@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:background="@drawable/bg_heathy3"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+       <ScrollView android:layout_width="match_parent"
+           android:layout_height="match_parent">
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="vertical">
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Tên món ăn: Gà xào nấm"
+                   android:id="@+id/tv_tenMonAn_M006_1"
+                   android:textColor="@color/black"
+                   android:textStyle="bold"
+                   android:textSize="@dimen/d_25"
+                   android:layout_gravity="center"
+                   android:layout_marginTop="@dimen/d_10"/>
+               <TextView
+                   android:id="@+id/tv_calo_m006_1"
+                   android:layout_marginBottom="@dimen/d_10"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Lượng calo có trong món: "
+                   android:textColor="@color/black"
+                   android:textStyle="bold"
+                   android:textSize="@dimen/d_18"
+                   android:paddingLeft="@dimen/d_10"
+                   android:layout_marginTop="@dimen/d_10"/>
+               <TextView
+                   android:layout_marginBottom="@dimen/d_10"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Thành phần thực phẩm trong món ăn"
+                   android:textColor="@color/black"
+                   android:textStyle="bold"
+                   android:textSize="@dimen/d_18"
+                   android:paddingLeft="@dimen/d_10" />
+               <androidx.recyclerview.widget.RecyclerView
+                   android:paddingLeft="@dimen/d_10"
+                   android:paddingRight="@dimen/d_10"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:id="@+id/rc_monan_m006_1"/>
+           </LinearLayout>
+       </ScrollView>
+    </LinearLayout>
+</LinearLayout>

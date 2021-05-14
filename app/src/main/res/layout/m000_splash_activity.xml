@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@drawable/bg_heathy2">
+    <LinearLayout android:layout_height="@dimen/d_500"
+        android:layout_width="match_parent"
+        android:gravity="center">
+        <ImageView
+            android:layout_width="@dimen/d_200"
+            android:layout_height="@dimen/d_200"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_logo"/>
+    </LinearLayout>
+    <ProgressBar
+        android:indeterminateTint="@color/purple_500"
+        android:layout_width="@dimen/d_50"
+        android:layout_height="@dimen/d_50"/>
+</LinearLayout>

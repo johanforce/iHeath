@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg_heathy3">
+    <LinearLayout
+        android:layout_marginTop="@dimen/d_20"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="@dimen/d_60"
+        android:layout_marginRight="@dimen/d_60">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:paddingLeft="4dp"
+            android:text="Tên món ăn"
+            android:textColor="@color/black"
+            android:textSize="@dimen/d_15"/>
+        <EditText
+            android:inputType="text"
+            android:id="@+id/et_tenMonAn_004"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/d_40"
+            android:layout_gravity="center_vertical"
+            android:hint="Nhập tên món ăn"
+            android:textColor="@color/black"
+            android:textSize="@dimen/d_15"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tính calo các loại thực phẩm"
+            android:textSize="@dimen/d_15"
+            android:layout_margin="@dimen/d_15"
+            android:textColor="@color/black"></TextView>
+
+        <LinearLayout
+            android:id="@+id/layout_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"></LinearLayout>
+
+        <Button
+            android:id="@+id/button_add"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/d_32"
+            android:layout_marginLeft="@dimen/d_10"
+            android:layout_marginTop="@dimen/d_10"
+            android:background="@drawable/round_button"
+            android:drawableRight="@drawable/ic_add"
+            android:paddingLeft="@dimen/d_10"
+            android:paddingRight="@dimen/d_10"
+            android:text="Thêm"
+            android:textAllCaps="false"
+            android:textColor="@color/white"></Button>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+            <Button
+                android:id="@+id/button_submit_list"
+                android:background="@drawable/round_button"
+                android:layout_width="@dimen/d_0"
+                android:layout_weight="1"
+                android:layout_height="@dimen/d_40"
+                android:text="Tính calo"
+                android:layout_marginTop="@dimen/d_10"
+                android:layout_marginLeft="@dimen/d_10"
+                android:layout_marginRight="@dimen/d_10"
+                android:textColor="@color/white"
+                android:textAllCaps="false"
+                android:paddingLeft="@dimen/d_10"
+                android:paddingRight="@dimen/d_10"
+                ></Button>
+            <Button
+                android:id="@+id/bt_ChiTiet"
+                android:layout_weight="1"
+                android:background="@drawable/round_button"
+                android:layout_width="@dimen/d_0"
+                android:layout_height="@dimen/d_40"
+                android:text="Xem chi tiết"
+                android:layout_marginTop="@dimen/d_10"
+                android:layout_marginLeft="@dimen/d_10"
+                android:layout_marginRight="@dimen/d_10"
+                android:textColor="@color/white"
+                android:textAllCaps="false"
+                android:paddingLeft="@dimen/d_10"
+                android:paddingRight="@dimen/d_10"
+                ></Button>
+        </LinearLayout>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tv_ketQua_004"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="@dimen/d_30"
+        android:gravity="center"/>
+</LinearLayout>

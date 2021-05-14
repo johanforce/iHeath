@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".M001_menu">
+
+    <LinearLayout
+        android:weightSum="10"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_figma"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_weight="2.5"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtDay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/d_20"
+                android:text="Health for you-Iheath"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/d_20" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="3">
+                <LinearLayout
+                    android:layout_width="@dimen/d_0"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:gravity="center">
+                    <ImageView
+                        android:id="@+id/ivWeather"
+                        android:layout_width="@dimen/d_50"
+                        android:layout_height="@dimen/d_50" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Status"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/d_20"
+                        android:id="@+id/txtStatus"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="@dimen/d_0"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:gravity="center">
+                    <TextView
+                        android:id="@+id/txtTemp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="19*C"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/d_50"/>
+                    <TextView
+                        android:id="@+id/txtCity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Hà Nội"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/d_20"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="@dimen/d_0"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:gravity="center">
+                    <ImageView
+                        android:id="@+id/ivHu"
+                        android:layout_width="@dimen/d_50"
+                        android:layout_height="@dimen/d_50"
+                        android:background="@drawable/humidity" />
+                    <TextView
+                        android:id="@+id/txtHumidity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Độ ẩm"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/d_20"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <ScrollView
+            android:scrollbars="none"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="6.5">
+            <LinearLayout
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+                <GridLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:alignmentMode="alignMargins"
+                    android:columnCount="2"
+                    android:columnOrderPreserved="false"
+                    android:rowCount="1">
+
+                    <!-- Row 1 -->
+
+                    <!-- Column 1 -->
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="@dimen/d_175"
+                        android:layout_height="@dimen/d_175"
+                        android:layout_marginBottom="@dimen/d_16"
+                        app:cardCornerRadius="@dimen/d_8"
+                        app:cardElevation="@dimen/d_8"
+                        android:id="@+id/cv_food_M001">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal|center_vertical"
+                            android:layout_margin="@dimen/d_16"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="@dimen/d_50"
+                                android:layout_height="@dimen/d_50"
+                                android:layout_gravity="center_horizontal"
+                                android:src="@drawable/food" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Thực phẩm"
+                                android:textAlignment="center"
+                                android:textColor="@android:color/black"
+                                android:textSize="@dimen/d_18"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <!-- Column 2 -->
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="@dimen/d_175"
+                        android:layout_height="@dimen/d_175"
+                        android:layout_marginLeft="@dimen/d_20"
+                        android:layout_marginBottom="@dimen/d_16"
+                        app:cardCornerRadius="@dimen/d_8"
+                        app:cardElevation="@dimen/d_8"
+                        android:id="@+id/cv_chiSoCoThe_M001">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal|center_vertical"
+                            android:layout_margin="@dimen/d_16"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="@dimen/d_50"
+                                android:layout_height="@dimen/d_50"
+                                android:layout_gravity="center_horizontal"
+                                android:src="@drawable/calories" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Chỉ số cơ thể"
+                                android:textAlignment="center"
+                                android:textColor="@android:color/black"
+                                android:textSize="@dimen/d_18"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+                </GridLayout>
+
+                <GridLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:alignmentMode="alignMargins"
+                    android:columnCount="2"
+                    android:columnOrderPreserved="false"
+                    android:rowCount="1">
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="@dimen/d_175"
+                        android:layout_height="@dimen/d_175"
+                        android:layout_marginBottom="@dimen/d_16"
+                        app:cardCornerRadius="@dimen/d_8"
+                        app:cardElevation="@dimen/d_8"
+                        android:id="@+id/cv_tinhCalo_M001">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal|center_vertical"
+                            android:layout_margin="@dimen/d_16"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="@dimen/d_50"
+                                android:layout_height="@dimen/d_50"
+                                android:layout_gravity="center_horizontal"
+                                android:src="@drawable/bmi" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Tính calories"
+                                android:textAlignment="center"
+                                android:textColor="@android:color/black"
+                                android:textSize="@dimen/d_18"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <!-- Column 2 -->
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="@dimen/d_175"
+                        android:layout_height="@dimen/d_175"
+                        android:layout_marginBottom="@dimen/d_16"
+                        app:cardCornerRadius="@dimen/d_8"
+                        app:cardElevation="@dimen/d_8"
+                        android:layout_marginLeft="@dimen/d_20"
+                        android:id="@+id/cv_TheoDoiCanNang_M001">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal|center_vertical"
+                            android:layout_margin="@dimen/d_16"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="@dimen/d_50"
+                                android:layout_height="@dimen/d_50"
+                                android:layout_gravity="center_horizontal"
+                                android:src="@drawable/exercise" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Theo dõi cân nặng"
+                                android:textAlignment="center"
+                                android:textColor="@android:color/black"
+                                android:textSize="@dimen/d_18"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+                </GridLayout>
+                <GridLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:alignmentMode="alignMargins"
+                    android:columnCount="2"
+                    android:columnOrderPreserved="false"
+                    android:rowCount="1">
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="@dimen/d_175"
+                        android:layout_height="@dimen/d_175"
+                        android:layout_marginBottom="@dimen/d_16"
+                        app:cardCornerRadius="@dimen/d_8"
+                        app:cardElevation="@dimen/d_8"
+                        android:id="@+id/cv_monAN_M006">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal|center_vertical"
+                            android:layout_margin="@dimen/d_16"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="@dimen/d_50"
+                                android:layout_height="@dimen/d_50"
+                                android:layout_gravity="center_horizontal"
+                                android:src="@drawable/pho" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Món ăn của bạn"
+                                android:textAlignment="center"
+                                android:textColor="@android:color/black"
+                                android:textSize="@dimen/d_18"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <!-- Column 2 -->
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="@dimen/d_175"
+                        android:layout_height="@dimen/d_175"
+                        android:layout_marginBottom="@dimen/d_16"
+                        app:cardCornerRadius="@dimen/d_8"
+                        app:cardElevation="@dimen/d_8"
+                        android:layout_marginLeft="@dimen/d_20"
+                        android:id="@+id/cv_tinTuc_M007">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal|center_vertical"
+                            android:layout_margin="@dimen/d_16"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="@dimen/d_50"
+                                android:layout_height="@dimen/d_50"
+                                android:layout_gravity="center_horizontal"
+                                android:src="@drawable/news" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Tin tức"
+                                android:textAlignment="center"
+                                android:textColor="@android:color/black"
+                                android:textSize="@dimen/d_18"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+                </GridLayout>
+                <GridLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:alignmentMode="alignMargins"
+                    android:columnCount="1"
+                    android:columnOrderPreserved="false"
+                    android:rowCount="1">
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="@dimen/d_175"
+                        android:layout_height="@dimen/d_175"
+                        android:layout_marginBottom="@dimen/d_16"
+                        app:cardCornerRadius="@dimen/d_8"
+                        app:cardElevation="@dimen/d_8"
+                        android:id="@+id/cv_nhipTim_M008">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal|center_vertical"
+                            android:layout_margin="@dimen/d_16"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="@dimen/d_50"
+                                android:layout_height="@dimen/d_50"
+                                android:layout_gravity="center_horizontal"
+                                android:src="@drawable/heart" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Đo nhịp tim"
+                                android:textAlignment="center"
+                                android:textColor="@android:color/black"
+                                android:textSize="@dimen/d_18"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+                </GridLayout>
+            </LinearLayout>
+        </ScrollView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="@dimen/d_40"
+                android:layout_height="@dimen/d_40"
+                android:id="@+id/iv_info_m009"
+                android:src="@drawable/ic_baseline_info_24"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

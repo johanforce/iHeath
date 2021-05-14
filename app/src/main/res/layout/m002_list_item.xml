@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="@dimen/d_50"
+    android:gravity="center">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d_5"/>
+    <LinearLayout android:layout_height="@dimen/d_50"
+        android:layout_width="match_parent"
+        android:weightSum="2"
+        android:layout_marginLeft="@dimen/d_20"
+        android:layout_marginRight ="@dimen/d_20"
+        android:gravity="center"
+        android:background="@drawable/box2"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_gravity="center"
+            android:text="Nghệ"
+            android:id="@+id/tenItem_M002"
+            android:layout_width="@dimen/d_0"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:paddingLeft="?android:attr/expandableListPreferredChildPaddingLeft"
+            android:paddingTop="@dimen/d_0"
+            android:textColor="@color/black"
+            android:paddingBottom="@dimen/d_5" />
+        <TextView
+            android:layout_marginBottom="@dimen/d_5"
+            android:layout_weight="1"
+            android:id="@+id/caloItem_M002"
+            android:layout_width="@dimen/d_0"
+            android:layout_height="wrap_content"
+            android:text="100g"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+<!--    <com.github.mikephil.charting.charts.PieChart-->
+<!--        android:id="@+id/chart_M002"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:layout_width="10@dimen/d_0"-->
+<!--        android:layout_height="@dimen/d_0" />-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d_5"/>
+</LinearLayout>

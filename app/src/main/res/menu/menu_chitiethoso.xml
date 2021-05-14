@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="Theo dõi cân nặng"
+        android:id="@+id/menuTheoDoiCanNang"/>
+    <item android:title="Thực đơn trong tuần"
+        android:id="@+id/menuThucDon"/>
+</menu>

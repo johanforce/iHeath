@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg_heathy2">
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="*Vui lòng tham khảo ý kiến ​​bác sĩ khi giảm 0,5 kg trở lên mỗi tuần khi cơ thể bạn cần bạn tiêu thụ calo ít mức khuyến nghị tối thiểu 1.200 calo mỗi ngày."
+        android:textSize="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="@dimen/d_300"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/d_10"
+        android:background="@drawable/khungbmi"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="60dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:paddingLeft="4dp"
+                android:text="Lượng calo hiện tại"
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+
+            <EditText
+                android:id="@+id/etCalo_GiamCan003"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:hint="Nhập calo hiện tại"
+                android:inputType="number"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="60dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:paddingLeft="4dp"
+                android:text="Cân nặng muốn giảm"
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+
+            <EditText
+                android:id="@+id/etCanNang_GiamCan003"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:hint="Nhập cân nặng muốn giảm"
+                android:inputType="number"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="60dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:paddingLeft="4dp"
+                android:text="Thời gian thực hiện(tuần)"
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+
+            <EditText
+                android:id="@+id/etThoiGian_GiamCan003"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:hint="Nhập thời gian"
+                android:inputType="number"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btKetQua_GiamCan003"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/d_10"
+            android:layout_marginBottom="@dimen/d_25"
+            android:background="@drawable/round_button"
+            android:paddingLeft="20dp"
+            android:paddingTop="5dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="5dp"
+            android:text="Kết quả"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_marginTop="@dimen/d_10"
+        android:padding="@dimen/d_20"
+        android:background="@drawable/khungbmi_2"
+        android:id="@+id/tvKetQua_GiamCan003"
+        android:layout_width="@dimen/d_300"
+        android:layout_height="@dimen/d_105"
+        android:text="Xin mời bạn nhập thông tin!"
+        android:textSize="@dimen/d_15"
+        android:textColor="@color/black"
+        android:textStyle="normal"
+        android:layout_gravity="center"/>
+</LinearLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/d_85"
+    android:orientation="vertical"
+    android:gravity="center">
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/d_75"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/khungbmi_2">
+    <TextView
+        android:id="@+id/tv_tenThucPham_M004_1"
+        android:paddingLeft="@dimen/d_20"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Gạo nếp"
+        android:textSize="@dimen/d_18"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/tv_caloThucPham_M004_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="100 gram- 346 calo"
+        android:textColor="@color/black"
+        android:paddingLeft="@dimen/d_20"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d_10"/>
+</LinearLayout>
